@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SchoolModelStoreContainer" CdmEntityContainer="SchoolEntities">
+    <EntitySetMapping Name="Classes">
+      <EntityTypeMapping TypeName="SchoolModel.Class">
+        <MappingFragment StoreEntitySet="Classes">
+          <ScalarProperty Name="classId" ColumnName="classId" />
+          <ScalarProperty Name="className" ColumnName="className" />
+          <ScalarProperty Name="classFloor" ColumnName="classFloor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="SchoolModel.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="RollNo" ColumnName="RollNo" />
+          <ScalarProperty Name="studentName" ColumnName="studentName" />
+          <ScalarProperty Name="classId" ColumnName="classId" />
+          <ScalarProperty Name="subjectId" ColumnName="subjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="SchoolModel.Subject">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="subjectId" ColumnName="subjectId" />
+          <ScalarProperty Name="subjectName" ColumnName="subjectName" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
